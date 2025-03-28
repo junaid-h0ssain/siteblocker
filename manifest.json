@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Site Blocker",
+    "version": "1.0",
+    "description": "Blocks websites except for a 20-minute window every 3 hours.",
+    "permissions": ["storage", "webRequest", "webRequestBlocking", "<all_urls>", "tabs"],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "browser_action": {
+      "default_popup": "popup.html"
+    }
+  }
